@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500600700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+
+}
+
+body{
+    font-family: "Poppins" , sans-serif;
+    background-color: #1b1726;
+
+}
+img {
+
+    max-width: 100%;
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: url(images/images/bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+    padding: 80px 0;
+
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.Logo {
+    color: #c13848;
+    font-size: 25px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.menu .royers ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .royers ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #ffffff;
+    font-weight: 600;
+    display: block;
+}
+
+
+.menu .royers ul li a:hover {
+    color: #c13848;
+}
+
+#menu {
+    display: none;
+}
+
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+
+.header-content {
+    display: flex;
+}
+
+.header-txt {
+    flex-basis: 50%;
+}
+
+
+.header-txt h1 {
+    font-size: 60px;
+    color: #285cb6;
+    line-height: 1.3;
+    margin-bottom: 25px;
+}
+
+.header-txt span {
+    color: #3c12e1;
+}
+
+.header-txt p {
+    font-size:20px;
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+
+.buttons {
+    display: flex;
+
+}
+
+
+.btn-1, .btn-2, .btn-3 {
+    display: inline-block;
+    padding: 11px 35px;
+    border: 2px soild #3c12e1;
+    border-radius: 25px;
+    font-size: 17px;
+    color: #ffffff;
+}
+
+.btn-1-hover {
+    background-color: #3c12e1;
+}
+
+.popular {
+    padding: 100px 0;
+    text-align: center;
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 35px;
+    margin-bottom: 45px;
+}
+
+.popular-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular-content img {
+    width: 150px;
+}
+
+.producto-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+
+.producto-1 {
+    background-color: #2a223a;
+}
+
+.producto-txt {
+    padding: 50px 30px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price p {
+    font-size: 17px;
+    color: #3c12e1;
+}
+
+.btn-2 {
+    padding: 5px 25px;
+    background-color: #3c12e1;
+    margin-right: 0;
+}
+
+.contacto {
+    padding: 150px 300px;
+}
+
+.contacto-content {
+    background-color: #2a223a;
+    text-align: center;
+    padding: 50px;
+    border-radius: 50px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+input {
+    padding: 18px 25px;
+    background-color: #3f3456;
+    border: 0;
+    border-radius: 25px;
+    outline: none;
+    margin-right: 10px;
+    color: #ffffff;
+    font-size: 19px;
+}
+
+::placeholder {
+    color: #E0E0E0;
+    font-size: 19px;
+}
+
+.btn-3 {
+    background-color: #3c12e1;
+    cursor: pointer;
+    margin-right: 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.link ul {
+    display: flex;
+}
+
+.link ul li > a {
+    font-size: 19px;
+    color: #ffffff;
+    margin-right: 20px;
+}
+
+.link ul li > a:hover{
+    color: #3c12e1;
+}
+
+@media(max-width:991px) {
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .royers {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #3c12e1;
+        display: none;
+    }
+
+    .menu .royers ul li a:hover {
+        color: #1b1726;
+    }
+
+    .menu .royers ul li {
+        width: 100%;
+    }
+
+
+    #menu:checked ~ .royers {
+        display: initial;
+    }
+
+    .header {
+        min-height: 0vh;
+        padding: 85px 35px 55px 35px;
+    }
+
+    .header-txt {
+        text-align: center;
+        flex-basis: 100%;
+    }
+    
+
+    .header-txt h1 {
+        font-size: 50px;
+        margin-bottom: 15px;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    .btn-1 :last-of-type {
+        margin-right: 0;
+
+    }
+
+    .popular {
+        display: none;
+    }
+
+    .producto {
+        padding: 30px;
+    }
+
+    .producto-content {
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
+    }
+
+    .producto-1 img {
+        width: 100%;
+    }
+
+    .contacto {
+        padding: 30px;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    input {
+        margin: 0 0 20px 0;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .link {
+        margin-top: 20px;
+    }
+
+}
